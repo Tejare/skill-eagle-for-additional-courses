@@ -1,0 +1,35 @@
+<head>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        </head>
+        <section style="background-image :url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+            <div class="page-info-section set-bg">
+              <div class="container" >
+                <div class="site-breadcrumb">
+                  <a href="#">Home</a>
+                  <span>Register</span>
+                </div>
+              </div>
+            </div>
+            <div class="container" id="register_div" layout-align="center center" style="height: 100vh">
+              <div class="row">
+                <div class="col-md-12">
+                  <form class="registerForm">
+                    <div class="form-group">
+                      <label>Email address</label>
+                      <input type="text" ngModel name="email" #email="ngModel" class="form-control" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input type="password" class="form-control" ngModel name="password" #password="ngModel" placeholder="Enter Password">
+                      <label class="error">{{errorMessage}}</label>
+                      <label class="success">{{successMessage}}</label>
+                    </div>
+                    <button type="submit" (click)="tryRegister(email.value,password.value)" class="btn btn-danger">Register</button>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+            <br><br><br>
+            </section>
+            
