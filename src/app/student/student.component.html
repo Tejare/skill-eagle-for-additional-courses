@@ -1,0 +1,43 @@
+<article>
+        <div class="container">
+                <div class="col-md-12" id="card" style="margin-top:200px; ">
+                    <div class="row" >  
+                    <div class="col-md-6">
+                        <h3 style="display:inline; white-space:nowrap;" >Student</h3>&nbsp;       
+                    </div> 
+                    <div class="col-md-4">     
+                        <button style="float:right;" type="button" class="btn btn-danger" (click)="logout()">Logout</button>
+                    </div>    
+                    </div>      
+                </div>
+            </div>
+        <header class="special container">
+            <span class="icon solid fa-chart-bar"></span>
+            <h2>Experience <strong>Learning</strong> with us
+            <br />
+            the acquisition of knowledge or skills through study, experience, or being taught.</h2>
+            <p>You can Never be <strong>Late</strong> to study a skill
+            <br />
+            Let us help you excel in skills you think will add in your resume and will be helpfull in future. 
+            <br /> Have fun!</p>
+        </header>
+
+
+        <!-- Two -->
+            <section class="wrapper style1 container special">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" *ngFor="let course of courseArray">
+                        <section>
+                            <header>
+                                <h3 class="text-center text-primary">{{course.name}}</h3>
+                                <p>{{course.description}}</p>
+                                <ul class="d-flex justify-content-center">
+                                    <button md-raised-button color="primary" (click)="openDialog(course)">Enrol</button>             
+                                    <a type="button" href="https://www.paypal.com/in/webapps/mpp/home?gclsrc=aw.ds&gclid=CjwKCAjwsfreBRB9EiwAikSUHXeX4pBhBtOROuQcoJBsibrKE8kGUboT7wdPnX89xyFcSoJzvkwiaxoCUOQQAvD_BwE&gclsrc=aw.ds" type="button" class="btn btn-success">Pay</a>
+                                </ul>
+                            </header>
+                        </section>
+                    </div>
+                </div>
+            </section>
+    </article>
