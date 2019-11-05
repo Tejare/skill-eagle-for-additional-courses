@@ -1,0 +1,3 @@
+<form [formGroup]='dataForm'>
+    <input type="file" formControlName='uploading' name='uploading' id='uploading'  multiple="multiple" placeholder="Upload A file" class="form-control" accept=".xlsx" (change)="onFileSelected($event,dataForm.value)"/>
+</form>
